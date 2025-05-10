@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+}
+
+.header{
+    background-color: #999999;
+    color: #fff;
+    text-align: left;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 50px;
+}
+
+.main-container{
+    margin: 40px 50px 50px 50px;
+}
+
+.new-trip_container{
+    display: grid;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.trip_title{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.new-trip_input_container{
+    display: grid;
+}
+
+.new-trip_input{
+    margin: 20px 20px 0px 20px;
+    height: 40px;
+    flex-grow: 1;
+    text-align: auto;
+    border: 2px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 7px;
+
+}
+
+.filter-container {
+    display: grid;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    gap: 10px;
+}
+
+select {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.new-trip_button{
+    margin: 20px 20px 20px 20px;
+    height: 40px;
+    flex-grow: 1;
+    border-radius: 5px;
+    background-color: #999999;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+.new-trip_button:hover {
+    background-color: #858585;
+}
+
+.trips{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 30px 30px;
+}
+
+.trip{
+    position: relative;
+    display: grid;
+    background-color: #fff;
+    height: 150px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+
+
+.trip-controls{
+    display: flex;
+    margin-right: 10px;
+    gap: 5px;
+    margin-top: 5px;
+}
+.delete-trip{
+    height: 40px;
+    flex-grow: 1;
+    border-radius: 5px;
+    background-color: #999999;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+.delete-trip:hover {
+    background-color: #858585;
+}
+
+.filter-button{
+    height: 40px;
+    flex-grow: 1;
+    border-radius: 5px;
+    background-color: #999999;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+
+.filter-button:hover{
+    background-color: #858585;
+}
+
+.edit-trip{
+    height: 40px;
+    flex-grow: 1;
+    border-radius: 5px;
+    background-color: #999999;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+.edit-trip:hover {
+    background-color: #858585;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-trip_form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+  display: grid;
+  gap: 15px;
+}
+
+.edit-trip_form input {
+  padding: 8px 12px;
+  border: 2px solid #c0c0c0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.edit-trip_form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #999999;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.edit-trip_form button:hover {
+  background-color: #858585;
+}
+
+.from{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+.to{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
